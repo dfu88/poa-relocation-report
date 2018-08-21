@@ -1,0 +1,24 @@
+\newpage
+\refstepcounter{section}
+%Add Image
+\vspace*{-40mm} %Make image have no top margin
+\begin{tikzpicture}
+\node[inner sep=0pt] (x) at (0,0)
+    {\hspace{-87mm}\includegraphics[width=\paperwidth]{sectionimage3.jpg}};
+\node[text width=10in] (Z) at (0,-1) {\color{white}\headingfont\Large\bfseries\uppercase{\hspace{-0.7cm}\thesection\hspace{0.5cm}Recycling Process}};
+\end{tikzpicture}
+%Modify TOC
+\addcontentsline{toc}{section}{\protect\numberline{\thesection}Recycling Process}
+  \sectionmark{Recycling Process}
+\vspace{-2mm}
+
+
+\subsection*{Recycling Diagram}
+\begin{wrapfigure}{l}{\linewidth}
+\centering
+\includegraphics[width=0.9\textwidth]{RecylingDiagram.png}
+\centering
+\caption{Diagram of Recycling Process}
+\end{wrapfigure}
+
+\clearpage

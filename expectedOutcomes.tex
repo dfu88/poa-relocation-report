@@ -1,0 +1,43 @@
+\newpage
+\refstepcounter{section}
+%Add Image
+\vspace*{-40mm} %Make image have no top margin
+\begin{tikzpicture}
+\node[inner sep=0pt] (x) at (0,0)
+    {\hspace{-87mm}\includegraphics[width=\paperwidth]{sectionimage3.jpg}};
+\node[text width=10in] (Z) at (0,-1)  {\color{white}\headingfont\Large\bfseries\uppercase{\hspace{-0.7cm}\thesection\hspace{0.5cm}Expected Outcomes}};
+\end{tikzpicture}
+%Modify TOC
+\addcontentsline{toc}{section}{\protect\numberline{\thesection}Expected Outcomes}
+\sectionmark{Expected Outcomes}
+\vspace{-2mm}
+
+\begin{wraptable}{l}{\linewidth}
+\centering
+\includegraphics[width=\textwidth]{expectedOutcomes.png}
+\centering
+\caption{Table of Expected Outcomes}
+\end{wraptable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage

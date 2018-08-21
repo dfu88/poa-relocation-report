@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{titlesec}
+\usepackage[compact]{titlesec}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{multicol}
+\usepackage[percent]{overpic}
+% \usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage{enumitem}
+% \usepackage[demo]{graphicx}
+% \usepackage{subfig}
+
+\include{defs}
+
+\usepackage{lipsum}
+% \setlength{\parindent}{0in}
+\setlength{\columnsep}{1cm}
+
+%-------------------------------------
+
+% Title Page
+\title{Auckland's Port Relocation Solutions}
+\author{Strategic Management Plan \newline\newline FC Consulting \newline Team 13}
+% \date{\today}
+%-------------------------------------
+
+\begin{document}
+\maketitle
+\pagenumbering{roman}
+%-------------------------------------
+
+% Cover Sheet
+\newpage
+\thispagestyle{empty} % Removes header and footer
+\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
+  \includegraphics[height=\paperheight,width=\paperwidth]{CoverSheet.pdf}}; % Use relevant image or pdf
+\clearpage
+%-------------------------------------
+
+% Team Photo
+\newpage
+\section*{Team 13}
+\tikz[remember picture,overlay] \node[opacity=1, yshift=-0.7cm, at=(current page.center)] {
+  \includegraphics[height=0.85\paperheight,width=0.85\paperwidth]{teamPhoto.png}}; % Use relevant image or pdf
+\clearpage
+%-------------------------------------
+
+\input{executiveSummary.tex}
+%-------------------------------------
+
+% Info Graphic
+\newpage
+\thispagestyle{empty} % Removes header and footer
+\tikz[remember picture,overlay] \node[opacity=1, at=(current page.center)] {
+  \includegraphics[height=\paperwidth,angle=90]{AtAGlance.png}}; % Use relevant image or pdf
+\clearpage
+%-------------------------------------
+
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+\pagenumbering{arabic}
+
+\input{intro.tex}
+\input{stakeholderAnal.tex}
+\input{stakeholderReq.tex}
+\input{options.tex}
+\input{recyclingProcess.tex}
+\input{bestFitOption.tex}
+\input{implementation.tex}
+\input{risks.tex}
+\input{opportunities.tex}
+\input{safety.tex}
+\input{expectedOutcomes.tex}
+\input{conclusions.tex}
+\input{appendices.tex}
+\input{references.tex}
+
+\end{document}          

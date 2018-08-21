@@ -1,0 +1,18 @@
+\newpage
+\refstepcounter{section}
+%Add Image
+\vspace*{-40mm} %Make image have no top margin
+\begin{tikzpicture}
+\node[inner sep=0pt] (x) at (0,0)
+    {\hspace{-88.5mm}\includegraphics[width=\paperwidth]{sectionimage4.jpg}};
+\node[text width=10in] (Z) at (0,-1) {\color{white}\headingfont\Large\bfseries\uppercase{\hspace{-0.7cm}\thesection\hspace{0.5cm}Considerations}};
+\end{tikzpicture}
+%Modify TOC
+\addcontentsline{toc}{section}{\protect\numberline{\thesection}Considerations}
+  \sectionmark{Considerations}
+\vspace{-5mm}
+
+%Content
+\subsection{ABC}
+
+\clearpage
